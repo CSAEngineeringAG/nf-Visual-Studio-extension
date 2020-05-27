@@ -450,10 +450,6 @@
     <Reference Include="mustache-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5885df51f4df0041, processorArchitecture=MSIL">
       <HintPath>..\packages\mustache-sharp.1.0.0\lib\net45\mustache-sharp.dll</HintPath>
     </Reference>
-    <Reference Include="nanoFramework.Tools.Debugger.Net, Version=1.16.0.0, Culture=neutral, PublicKeyToken=e520bb6b53f04733">
-      <HintPath>..\packages\nanoFramework.Tools.Debugger.Net.1.16.0-preview.8\lib\net472\nanoFramework.Tools.Debugger.Net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="nanoFramework.Tools.MetadataProcessor.Core, Version=2.22.43.33809, Culture=neutral, PublicKeyToken=562e3cb1ad703850">
       <HintPath>..\packages\nanoFramework.Tools.MetadataProcessor.Core.2.22.43\lib\net461\nanoFramework.Tools.MetadataProcessor.Core.dll</HintPath>
       <Private>True</Private>
@@ -694,6 +690,10 @@
       <Project>{101d57ad-d22f-4905-a992-de15e723f164}</Project>
       <Name>nanoFramework.Tools.DebugLibrary.Net</Name>
     </ProjectReference>-->
+    <ProjectReference Include="..\..\nf-debugger\source\nanoFramework.Tools.DebugLibrary.Net\nanoFramework.Tools.DebugLibrary.Net.csproj">
+      <Project>{101d57ad-d22f-4905-a992-de15e723f164}</Project>
+      <Name>nanoFramework.Tools.DebugLibrary.Net</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharp.AssemblyInfoTemplate\CSharp.AssemblyInfoTemplate.csproj">
       <Project>{EF2FEEDF-2D22-49F7-A51C-F6D4155A7932}</Project>
       <Name>CSharp.AssemblyInfoTemplate</Name>
