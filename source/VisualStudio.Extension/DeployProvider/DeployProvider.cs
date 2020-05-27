@@ -137,6 +137,8 @@ namespace nanoFramework.Tools.VisualStudio.Extension
                     {
                         MessageCentre.InternalErrorMessage("Erase deployment area successful.");
 
+                        await Task.Delay(5000).ConfigureAwait(true);
+
                         // initial check 
                         if (device.DebugEngine.IsDeviceInInitializeState())
                         {
