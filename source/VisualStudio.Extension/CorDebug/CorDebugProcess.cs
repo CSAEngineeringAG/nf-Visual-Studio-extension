@@ -628,6 +628,9 @@ namespace nanoFramework.Tools.VisualStudio.Extension
                     EnsureProcessIsInInitializedState();
 
                     MessageCentre.DebugMessage("Updating nanoDevice debugger engine.");
+                    // phl: longer time after reboot
+                    Thread.Sleep(3000);
+                    Thread.Yield();
 
                     // need to update the debugger engine flags on the device after ensuring that the device is properly initialized
                     // this is needed to make sure that all engine flags are properly set
